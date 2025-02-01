@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50dvh;
+  height: 80dvh;
   background: radial-gradient(
     circle at center,
     var(--accent),
