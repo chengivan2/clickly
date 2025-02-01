@@ -1,22 +1,26 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import './hero.css'
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./hero.css";
+import Link from "next/link";
+import HeaderLogo from "./HeaderLogo";
 
 const HeroSection = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
     setTheme(systemTheme);
   }, []);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
@@ -24,14 +28,7 @@ const HeroSection = () => {
       {/* Header */}
       <div className="header">
         {/* Logo */}
-        <div className="logo">
-          <Image
-            src="/clickly-header-logo.png" // Replace with your logo path
-            alt="Clickly Logo"
-            width={150}
-            height={50}
-          />
-        </div>
+        <HeaderLogo />
 
         {/* Navigation Menu */}
         <nav className="nav">
@@ -43,21 +40,26 @@ const HeroSection = () => {
 
         {/* Theme Toggle */}
         <button className="theme-toggle" onClick={toggleTheme}>
-          {theme === 'light' ? '🌙' : '☀️'}
+          {theme === "light" ? "🌙" : "☀️"}
         </button>
 
         {/* Dashboard Button */}
         <div className="auth-links">
           <Link href="./sign-up">Sign Up</Link>
         </div>
-        <button className="glass-button" onClick={() => toast.info('Redirecting to dashboard...')}>
+        <button
+          className="glass-button"
+          onClick={() => toast.info("Redirecting to dashboard...")}
+        >
           Go to Dashboard
         </button>
       </div>
 
       {/* Main Heading and Subtitle */}
       <h1 className="main-heading">Clickly</h1>
-      <p className="subtitle">Manage your URLs seamlessly, effortlessly, and stylishly.</p>
+      <p className="subtitle">
+        Manage your URLs seamlessly, effortlessly, and stylishly.
+      </p>
     </div>
   );
 };
