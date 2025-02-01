@@ -35,7 +35,6 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Navigation Menu */}
         <nav className="nav">
           <a href="/">Home</a>
           <a href="#">Features</a>
