@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./hero.css";
 import Link from "next/link";
-import HeaderLogo from "./HeaderLogo";
+import clicklyHeaderLogo from "./clickly-header-logo.png";
 
 const HeroSection = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -28,7 +28,14 @@ const HeroSection = () => {
       {/* Header */}
       <div className="header">
         {/* Logo */}
-        <HeaderLogo />
+        <div className="logo">
+          <Image
+            src={clicklyHeaderLogo} // Replace with your logo path
+            alt="Clickly Logo"
+            width={150}
+            height={50}
+          />
+        </div>
 
         {/* Navigation Menu */}
         <nav className="nav">
