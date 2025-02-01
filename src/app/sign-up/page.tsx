@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { createClient } from "../../../utils/supabase/client";
+import { ToastContainer, toast } from 'react-toastify';
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
@@ -9,6 +10,8 @@ const SignUpForm = () => {
   const [firstName, setFirstName] = useState("");
 
   const handleSignUp = async (e: React.FormEvent) => {
+
+    const notifySuccessfulSignUp = () => toast("You have been signed up successfully! Check your email");
     e.preventDefault();
 
     const supabase = createClient();
