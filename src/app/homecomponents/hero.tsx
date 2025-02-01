@@ -25,12 +25,10 @@ const HeroSection = () => {
 
   return (
     <div data-theme={theme} className="hero">
-      {/* Header */}
       <div className="header">
-        {/* Logo */}
         <div className="logo">
           <Image
-            src={clicklyHeaderLogo} // Replace with your logo path
+            src={clicklyHeaderLogo}
             alt="Clickly Logo"
             width={150}
             height={50}
@@ -45,12 +43,10 @@ const HeroSection = () => {
           <a href="#">Contact</a>
         </nav>
 
-        {/* Theme Toggle */}
-        <button className="theme-toggle" onClick={toggleTheme}>
+        <button className="clickly-theme-toggle" onClick={toggleTheme}>
           {theme === "light" ? "🌙" : "☀️"}
         </button>
 
-        {/* Dashboard Button */}
         <div className="auth-links">
           <Link href="./sign-up">Sign Up</Link>
         </div>
@@ -62,7 +58,6 @@ const HeroSection = () => {
         </button>
       </div>
 
-      {/* Main Heading and Subtitle */}
       <h1 className="main-heading">Clickly</h1>
       <p className="subtitle">
         Manage your URLs seamlessly, effortlessly, and stylishly.
