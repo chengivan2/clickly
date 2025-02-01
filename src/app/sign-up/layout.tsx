@@ -4,7 +4,7 @@ import "./signupglobals.css";
 
 export const metadata: Metadata = {
   title: "Clickly - Sign Up",
-  description: "Sign up to start tracking URLs",
+  description: "Sign up to start managing your URLs seamlessly",
 };
 
 export default function RootLayout({
