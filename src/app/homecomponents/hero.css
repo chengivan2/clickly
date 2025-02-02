@@ -1,18 +1,18 @@
 :root {
-  --background: #ffffff;
-  --text: #000000;
-  --primary: #00eaab;
-  --secondary: #5271ff;
-  --accent: #c066ff;
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --background: hsl(0, 0%, 96%);
+  --text: hsl(0, 0%, 5%);
+  --primary: hsl(164, 100%, 46%);
+  --secondary: hsl(229, 100%, 66%);
+  --accent: hsl(275, 100%, 70%);
+  --glass-bg: hsla(0, 0%, 100%, 0.1);
+  --glass-border: hsla(0, 0%, 100%, 0.2);
 }
 
 [data-theme="dark"] {
-  --background: #1a1a1a;
-  --text: #ffffff;
-  --glass-bg: rgba(0, 0, 0, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --background: hsl(0, 0%, 10%);
+  --text: hsl(0, 0%, 96%);
+  --glass-bg: hsla(0, 0%, 0%, 0.1);
+  --glass-border: hsla(0, 0%, 100%, 0.1);
 }
 
 .hero {
