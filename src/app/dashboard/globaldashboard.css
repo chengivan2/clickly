@@ -1,9 +1,9 @@
 :root {
-  --background: #181818;
-  --text: #ffffff;
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --accent: #c066ff;
+  --background: hsl(0, 0%, 9%);
+  --text: hsl(0, 0%, 96%);
+  --glass-bg: hsla(0, 0%, 100%, 0.1);
+  --glass-border: hsla(0, 0%, 100%, 0.2);
+  --accent: hsl(275, 100%, 70%);
 }
 
 body {
