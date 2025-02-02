@@ -1,17 +1,12 @@
 :root {
-  --text: hsl(0, 0%, 5%);
+  --background: hsl(0, 0%, 10%);
+  --light-text: hsl(0, 0%, 96%);
+  --dark-text: hsl(0, 0%, 5%);
   --primary: hsl(164, 100%, 46%);
   --secondary: hsl(229, 100%, 66%);
   --accent: hsl(275, 100%, 70%);
   --glass-bg: hsla(0, 0%, 100%, 0.1);
   --glass-border: hsla(0, 0%, 100%, 0.2);
-}
-
-[data-theme="dark"] {
-  --background: hsl(0, 0%, 10%);
-  --text: hsl(0, 0%, 96%);
-  --glass-bg: hsla(0, 0%, 0%, 0.1);
-  --glass-border: hsla(0, 0%, 100%, 0.1);
 }
 
 .hero {
@@ -49,16 +44,9 @@
 }
 
 .nav a {
-  color: var(--text);
+  color: var(--light-text);
   text-decoration: none;
   font-weight: bold;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--text);
 }
 
 .glass-button {
@@ -79,12 +67,12 @@
 
 .main-heading {
   font-size: 4rem;
-  color: var(--text);
+  color: var(--light-text);
   margin: 2rem 0;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: var(--text);
+  color: var(--light-text);
   opacity: 0.8;
 }
