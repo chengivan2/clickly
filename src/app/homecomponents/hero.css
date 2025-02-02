@@ -29,7 +29,7 @@
   border-radius: 1rem;
   padding: 3rem 2rem;
   margin: 2rem 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px hsla(0, 0%, 10%, 0.1);
 }
 
 .header {
