@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { createClient } from "../../../utils/supabase/client";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignUpForm = () => {
   const [email, setEmail] = useState("");
@@ -11,8 +11,8 @@ const SignUpForm = () => {
   const [firstName, setFirstName] = useState("");
 
   const handleSignUp = async (e: React.FormEvent) => {
-
-    const notifySuccessfulSignUp = () => toast("You have been signed up successfully! Check your email");
+    const notifySuccessfulSignUp = () =>
+      toast("You have been signed up successfully! Check your email");
     e.preventDefault();
 
     const supabase = createClient();
@@ -28,11 +28,13 @@ const SignUpForm = () => {
     });
 
     if (error) {
-        toast.error('Failed to sign up. Please try again.');
+      toast.error("Failed to sign up. Please try again.");
       return;
     }
 
-    toast.success('Registration successful! Please check your email to confirm.');
+    toast.success(
+      "Registration successful! Please check your email to confirm."
+    );
   };
 
   return (
