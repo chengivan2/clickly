@@ -6,8 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "./hero.css";
 import Link from "next/link";
 import clicklyHeaderLogo from "./clickly-header-logo.png";
+import { createClient } from "../../../utils/supabase/client";
 
 const HeroSection = () => {
+
   return (
     <div className="hero">
       <div className="header">

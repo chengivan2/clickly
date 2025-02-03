@@ -1,18 +1,28 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import './globaldashboard.css';
+import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./globaldashboard.css";
 
 const Dashboard = () => {
   const [urls, setUrls] = useState([
-    { id: 1, shortCode: 'abc123', originalUrl: 'https://example.com/long-url', clicks: 42 },
-    { id: 2, shortCode: 'xyz456', originalUrl: 'https://another-example.com/long-url', clicks: 15 },
+    {
+      id: 1,
+      shortCode: "abc123",
+      originalUrl: "https://example.com/long-url",
+      clicks: 42,
+    },
+    {
+      id: 2,
+      shortCode: "xyz456",
+      originalUrl: "https://another-example.com/long-url",
+      clicks: 15,
+    },
   ]);
 
   const handleAddUrl = () => {
-    toast.info('Add URL functionality coming soon!');
+    toast.info("Add URL functionality coming soon!");
   };
 
   return (
@@ -22,7 +32,11 @@ const Dashboard = () => {
         <h2>Your URLs</h2>
         {urls.map((url) => (
           <div key={url.id} className="url-item">
-            <a href={`/${url.shortCode}`} target="_blank" rel="noopener noreferrer">
+            <a
+              href={`/${url.shortCode}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {url.shortCode}
             </a>
             <span>{url.clicks} clicks</span>
