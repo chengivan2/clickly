@@ -26,7 +26,7 @@ To get started with Clickly, follow these steps:
    ```
 
 3. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory and add your configuration settings.
+   Create a `.env` file in the root directory and add your Supabase configuration settings.
 
 4. **Run the Application**:
    ```bash
