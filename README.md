@@ -39,7 +39,3 @@ To get started with Clickly, follow these steps:
 ## Contributing
 
 We welcome contributions! If you'd like to contribute to Clickly, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
