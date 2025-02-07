@@ -16,7 +16,7 @@ To get started with Clickly, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/clickly.git
+   git clone https://github.com/chengivan2/clickly.git
    cd clickly
    ```
 
